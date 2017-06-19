@@ -109,6 +109,11 @@ top model =
                 "See it on GitHub"
                 "http://www.freysmiles.com/images/uploads/general/deserted_island.jpeg"
            ]]
+  ++ [G.grid [] [
+           G.cell [G.size G.Desktop 12, G.size G.Tablet 8, G.size G.Phone 6]
+              [ h3 [] [text "Errata"]
+              , p  [] [errata]]
+           ]]
 
 abstract = Markdown.toHtml [] """
 Differential privacy's primary goal is to release
@@ -123,6 +128,10 @@ statistical difference in the output of a differentially private protocol.
 This is promising for privacy, but implementing such techniques can be hard and
 raises several subtleties. To compensate we employ formal
 techniques to ensures that an implementation is correct.
+"""
+
+errata = Markdown.toHtml [] """
+* __June 18th 2017__ Corrected definition of pRHL and apRHL judgments.
 """
 
 card model k title descr btnUrl btnT imgUrl = G.cell [G.size G.Desktop 3, G.size G.Tablet 4, G.size G.Phone 6] [Card.view

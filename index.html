@@ -15772,6 +15772,10 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 	function (a, b, c, d) {
 		return {githubFlavored: a, defaultHighlighting: b, sanitize: c, smartypants: d};
 	});
+var _user$project$Main$errata = A2(
+	_evancz$elm_markdown$Markdown$toHtml,
+	{ctor: '[]'},
+	'\n* __June 18th 2017__ Corrected definition of pRHL and apRHL judgments.\n');
 var _user$project$Main$abstract = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},
@@ -16115,30 +16119,81 @@ var _user$project$Main$top = function (model) {
 				}),
 			_1: {ctor: '[]'}
 		},
-		{
-			ctor: '::',
-			_0: A2(
-				_debois$elm_mdl$Material_Grid$grid,
-				{ctor: '[]'},
-				{
-					ctor: '::',
-					_0: A7(_user$project$Main$card, model, 1, 'Case Study 1', 'Randomized Response', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/1-randomized-response.ec', 'See it on GitHub', 'https://www.random.org/analysis/randbitmap-rdo-section.png'),
-					_1: {
+		A2(
+			_elm_lang$core$Basics_ops['++'],
+			{
+				ctor: '::',
+				_0: A2(
+					_debois$elm_mdl$Material_Grid$grid,
+					{ctor: '[]'},
+					{
 						ctor: '::',
-						_0: A7(_user$project$Main$card, model, 2, 'Case Study 2', 'Laplace', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/2-lap.ec', 'See it on GitHub', 'http://www.sil.si.edu/DigitalCollections/hst/scientific-identity/fullsize/SIL14-L002-01a.jpg'),
+						_0: A7(_user$project$Main$card, model, 1, 'Case Study 1', 'Randomized Response', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/1-randomized-response.ec', 'See it on GitHub', 'https://www.random.org/analysis/randbitmap-rdo-section.png'),
 						_1: {
 							ctor: '::',
-							_0: A7(_user$project$Main$card, model, 3, 'Case Study 3', 'Sums over Stream', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/3-sums.ec', 'See it on GitHub', 'https://www.thesun.co.uk/wp-content/uploads/2016/09/nintchdbpict000266409417.jpg'),
+							_0: A7(_user$project$Main$card, model, 2, 'Case Study 2', 'Laplace', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/2-lap.ec', 'See it on GitHub', 'http://www.sil.si.edu/DigitalCollections/hst/scientific-identity/fullsize/SIL14-L002-01a.jpg'),
 							_1: {
 								ctor: '::',
-								_0: A7(_user$project$Main$card, model, 4, 'Case Study 4', 'Sparse Vector Technique', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/4-svt.ec', 'See it on GitHub', 'http://www.freysmiles.com/images/uploads/general/deserted_island.jpeg'),
-								_1: {ctor: '[]'}
+								_0: A7(_user$project$Main$card, model, 3, 'Case Study 3', 'Sums over Stream', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/3-sums.ec', 'See it on GitHub', 'https://www.thesun.co.uk/wp-content/uploads/2016/09/nintchdbpict000266409417.jpg'),
+								_1: {
+									ctor: '::',
+									_0: A7(_user$project$Main$card, model, 4, 'Case Study 4', 'Sparse Vector Technique', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/4-svt.ec', 'See it on GitHub', 'http://www.freysmiles.com/images/uploads/general/deserted_island.jpeg'),
+									_1: {ctor: '[]'}
+								}
 							}
 						}
-					}
-				}),
-			_1: {ctor: '[]'}
-		});
+					}),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_debois$elm_mdl$Material_Grid$grid,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A2(
+							_debois$elm_mdl$Material_Grid$cell,
+							{
+								ctor: '::',
+								_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Desktop, 12),
+								_1: {
+									ctor: '::',
+									_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Tablet, 8),
+									_1: {
+										ctor: '::',
+										_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Phone, 6),
+										_1: {ctor: '[]'}
+									}
+								}
+							},
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$h3,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Errata'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$p,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _user$project$Main$errata,
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}
+							}),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			}));
 };
 var _user$project$Main$layout = function (model) {
 	return _debois$elm_mdl$Material_Scheme$top(
