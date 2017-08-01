@@ -15839,7 +15839,7 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 var _user$project$Main$errata = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},
-	'\n* __June 18th 2017__ Corrected definition of pRHL and apRHL judgments.\n* __June 21st 2017__ Corrected Theorem 2.1 about sequential composition (Thanks to Jesper Bengtson)\n');
+	'\n* __August 1st 2017__ Corrected typos in Definition 3.8 (Thanks to Yisu Remy Wang)\n* __June 21st 2017__ Corrected Theorem 2.1 about sequential composition (Thanks to Jesper Bengtson)\n* __June 18th 2017__ Corrected definition of pRHL and apRHL judgments.\n');
 var _user$project$Main$abstract = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},

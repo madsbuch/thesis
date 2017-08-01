@@ -134,8 +134,9 @@ techniques to ensures that an implementation is correct.
 """
 
 errata = Markdown.toHtml [] """
-* __June 18th 2017__ Corrected definition of pRHL and apRHL judgments.
+* __August 1st 2017__ Corrected typos in Definition 3.8 (Thanks to Yisu Remy Wang)
 * __June 21st 2017__ Corrected Theorem 2.1 about sequential composition (Thanks to Jesper Bengtson)
+* __June 18th 2017__ Corrected definition of pRHL and apRHL judgments.
 """
 
 card model k title descr btnUrl btnT imgUrl = G.cell [G.size G.Desktop 3, G.size G.Tablet 4, G.size G.Phone 6] [Card.view
