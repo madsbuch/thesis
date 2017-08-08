@@ -83,7 +83,7 @@ top : Model -> List (Html Msg)
 top model =
   [  G.grid []
            [ card model 11 "Thesis" "The pdf"
-                "http://github.com/madsbuch/thesis/blob/gh-pages/thesis.pdf"
+                "thesis.pdf"
                 "Download"
                 "https://s-media-cache-ak0.pinimg.com/originals/4c/75/b9/4c75b9b14f9bd94abee3fd9054892fd4.jpg"
            , card model 10 "Virtual Machine" "Preloaded with resources"
@@ -113,10 +113,13 @@ top model =
                 "http://www.freysmiles.com/images/uploads/general/deserted_island.jpeg"
            ]]
   ++ [G.grid [] [
-           G.cell [G.size G.Desktop 12, G.size G.Tablet 8, G.size G.Phone 6]
+            G.cell [G.size G.Desktop 6, G.size G.Tablet 8, G.size G.Phone 6]
+              [ h3 [] [text "Citing"]
+              , p  [] [bibtex]]
+          , G.cell [G.size G.Desktop 6, G.size G.Tablet 8, G.size G.Phone 6]
               [ h3 [] [text "Errata"]
               , p  [] [errata]]
-           ]]
+            ]]
 
 abstract = Markdown.toHtml [] """
 Differential privacy's primary goal is to release
@@ -137,6 +140,16 @@ errata = Markdown.toHtml [] """
 * __August 1st 2017__ Corrected typos in Definition 3.8 (Thanks to Yisu Remy Wang)
 * __June 21st 2017__ Corrected Theorem 2.1 about sequential composition (Thanks to Jesper Bengtson)
 * __June 18th 2017__ Corrected definition of pRHL and apRHL judgments.
+"""
+
+bibtex = Markdown.toHtml [] """
+    @MASTERSTHESIS {madsbuch2017,
+      author = "Mads Buch",
+      title  = "Formalizing Differential Privacy",
+      school = "Aarhus University",
+      year   = "2017",
+      month  = "jun"
+    }
 """
 
 card model k title descr btnUrl btnT imgUrl = G.cell [G.size G.Desktop 3, G.size G.Tablet 4, G.size G.Phone 6] [Card.view

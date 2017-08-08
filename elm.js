@@ -15836,6 +15836,10 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 		return {githubFlavored: a, defaultHighlighting: b, sanitize: c, smartypants: d};
 	});
 
+var _user$project$Main$bibtex = A2(
+	_evancz$elm_markdown$Markdown$toHtml,
+	{ctor: '[]'},
+	'\n    @MASTERSTHESIS {madsbuch2017,\n      author = \"Mads Buch\",\n      title  = \"Formalizing Differential Privacy\",\n      school = \"Aarhus University\",\n      year   = \"2017\",\n      month  = \"jun\"\n    }\n');
 var _user$project$Main$errata = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},
@@ -16155,7 +16159,7 @@ var _user$project$Main$top = function (model) {
 				{ctor: '[]'},
 				{
 					ctor: '::',
-					_0: A7(_user$project$Main$card, model, 11, 'Thesis', 'The pdf', 'http://github.com/madsbuch/thesis/blob/gh-pages/thesis.pdf', 'Download', 'https://s-media-cache-ak0.pinimg.com/originals/4c/75/b9/4c75b9b14f9bd94abee3fd9054892fd4.jpg'),
+					_0: A7(_user$project$Main$card, model, 11, 'Thesis', 'The pdf', 'thesis.pdf', 'Download', 'https://s-media-cache-ak0.pinimg.com/originals/4c/75/b9/4c75b9b14f9bd94abee3fd9054892fd4.jpg'),
 					_1: {
 						ctor: '::',
 						_0: A7(_user$project$Main$card, model, 10, 'Virtual Machine', 'Preloaded with resources', 'https://www.dropbox.com/s/hdiozbruyx1zb16/mads-buch-master-thesis-vitual-machine.tar.gz', 'Download', 'https://tr1.cbsistatic.com/hub/i/r/2016/12/06/f3f2bd25-6c00-4f85-bfd7-51d3da18934d/resize/770x/1c6e838bd486d47d96d37788780e8779/vbhero.jpg'),
@@ -16242,7 +16246,7 @@ var _user$project$Main$top = function (model) {
 							_debois$elm_mdl$Material_Grid$cell,
 							{
 								ctor: '::',
-								_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Desktop, 12),
+								_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Desktop, 6),
 								_1: {
 									ctor: '::',
 									_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Tablet, 8),
@@ -16260,7 +16264,7 @@ var _user$project$Main$top = function (model) {
 									{ctor: '[]'},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Errata'),
+										_0: _elm_lang$html$Html$text('Citing'),
 										_1: {ctor: '[]'}
 									}),
 								_1: {
@@ -16270,13 +16274,54 @@ var _user$project$Main$top = function (model) {
 										{ctor: '[]'},
 										{
 											ctor: '::',
-											_0: _user$project$Main$errata,
+											_0: _user$project$Main$bibtex,
 											_1: {ctor: '[]'}
 										}),
 									_1: {ctor: '[]'}
 								}
 							}),
-						_1: {ctor: '[]'}
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_debois$elm_mdl$Material_Grid$cell,
+								{
+									ctor: '::',
+									_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Desktop, 6),
+									_1: {
+										ctor: '::',
+										_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Tablet, 8),
+										_1: {
+											ctor: '::',
+											_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Phone, 6),
+											_1: {ctor: '[]'}
+										}
+									}
+								},
+								{
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$h3,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('Errata'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$p,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _user$project$Main$errata,
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}),
+							_1: {ctor: '[]'}
+						}
 					}),
 				_1: {ctor: '[]'}
 			}));
