@@ -15942,7 +15942,7 @@ var _user$project$Main$header = A2(
 											_debois$elm_mdl$Material_Layout$link,
 											{
 												ctor: '::',
-												_0: _debois$elm_mdl$Material_Layout$href('https://github.com/madsbuch/thesis/archive/gh-pages.zip'),
+												_0: _debois$elm_mdl$Material_Layout$href('https://github.com/madsbuch/thesis/archive/master.zip'),
 												_1: {ctor: '[]'}
 											},
 											{
@@ -16218,16 +16218,16 @@ var _user$project$Main$top = function (model) {
 					{ctor: '[]'},
 					{
 						ctor: '::',
-						_0: A7(_user$project$Main$card, model, 1, 'Case Study 1', 'Randomized Response', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/1-randomized-response.ec', 'See it on GitHub', 'https://www.random.org/analysis/randbitmap-rdo-section.png'),
+						_0: A7(_user$project$Main$card, model, 1, 'Case Study 1', 'Randomized Response', 'http://github.com/madsbuch/thesis/blob/master/case-studies/1-randomized-response.ec', 'See it on GitHub', 'https://www.random.org/analysis/randbitmap-rdo-section.png'),
 						_1: {
 							ctor: '::',
-							_0: A7(_user$project$Main$card, model, 2, 'Case Study 2', 'Laplace', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/2-lap.ec', 'See it on GitHub', 'http://www.sil.si.edu/DigitalCollections/hst/scientific-identity/fullsize/SIL14-L002-01a.jpg'),
+							_0: A7(_user$project$Main$card, model, 2, 'Case Study 2', 'Laplace', 'http://github.com/madsbuch/thesis/blob/master/case-studies/2-lap.ec', 'See it on GitHub', 'http://www.sil.si.edu/DigitalCollections/hst/scientific-identity/fullsize/SIL14-L002-01a.jpg'),
 							_1: {
 								ctor: '::',
-								_0: A7(_user$project$Main$card, model, 3, 'Case Study 3', 'Sums over Stream', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/3-sums.ec', 'See it on GitHub', 'https://www.thesun.co.uk/wp-content/uploads/2016/09/nintchdbpict000266409417.jpg'),
+								_0: A7(_user$project$Main$card, model, 3, 'Case Study 3', 'Sums over Stream', 'http://github.com/madsbuch/thesis/blob/master/case-studies/3-sums.ec', 'See it on GitHub', 'https://www.thesun.co.uk/wp-content/uploads/2016/09/nintchdbpict000266409417.jpg'),
 								_1: {
 									ctor: '::',
-									_0: A7(_user$project$Main$card, model, 4, 'Case Study 4', 'Sparse Vector Technique', 'http://github.com/madsbuch/thesis/blob/gh-pages/case-studies/4-svt.ec', 'See it on GitHub', 'http://www.freysmiles.com/images/uploads/general/deserted_island.jpeg'),
+									_0: A7(_user$project$Main$card, model, 4, 'Case Study 4', 'Sparse Vector Technique', 'http://github.com/madsbuch/thesis/blob/master/case-studies/4-svt.ec', 'See it on GitHub', 'http://www.freysmiles.com/images/uploads/general/deserted_island.jpeg'),
 									_1: {ctor: '[]'}
 								}
 							}
