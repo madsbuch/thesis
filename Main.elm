@@ -67,7 +67,7 @@ header =
               , Layout.spacer
               , Layout.navigation []
                   [ Layout.link
-                      [ Layout.href "http://madsbuch.com/thesis/presentation"]
+                      [ Layout.href "/presentation"]
                       [ span [] [text "Defense Presentation"] ]
                   , Layout.link
                       [ Layout.href "https://github.com/madsbuch/thesis"]
