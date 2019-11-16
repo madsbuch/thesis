@@ -96,21 +96,21 @@ top model =
 
   ++ [G.grid []
            [ card model 1 "Case Study 1" "Randomized Response"
-                "http://github.com/madsbuch/thesis/blob/master/case-studies/1-randomized-response.ec"
+                "https://github.com/madsbuch/thesis/blob/master/case-studies/1-randomized-response.ec"
                 "See it on GitHub"
                 "/res/randbitmap-rdo-section.png"
            , card model 2 "Case Study 2" "Laplace"
-                "http://github.com/madsbuch/thesis/blob/master/case-studies/2-lap.ec"
+                "https://github.com/madsbuch/thesis/blob/master/case-studies/2-lap.ec"
                 "See it on GitHub"
                 "/res/SIL14-L002-01a.jpg"
            , card model 3 "Case Study 3" "Sums over Stream"
-                "http://github.com/madsbuch/thesis/blob/master/case-studies/3-sums.ec"
+                "https://github.com/madsbuch/thesis/blob/master/case-studies/3-sums.ec"
                 "See it on GitHub"
-                "https://www.thesun.co.uk/wp-content/uploads/2016/09/nintchdbpict000266409417.jpg"
+                "/res/nintchdbpict000266409417.jpg"
            , card model 4 "Case Study 4" "Sparse Vector Technique"
-                "http://github.com/madsbuch/thesis/blob/master/case-studies/4-svt.ec"
+                "https://github.com/madsbuch/thesis/blob/master/case-studies/4-svt.ec"
                 "See it on GitHub"
-                "http://www.freysmiles.com/images/uploads/general/deserted_island.jpeg"
+                "/res/island.jpeg"
            ]]
   ++ [G.grid [] [
             G.cell [G.size G.Desktop 6, G.size G.Tablet 8, G.size G.Phone 6]
